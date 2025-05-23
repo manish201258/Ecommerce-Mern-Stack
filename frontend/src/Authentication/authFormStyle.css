@@ -1,0 +1,103 @@
+/* Global font */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a3f);
+    color: #fff;
+  }
+  
+  /* Fullscreen container */
+  .auth-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/background.jpg') no-repeat center center/cover;
+    backdrop-filter: blur(6px);
+    padding: 1rem;
+  }
+  h2{
+    text-align: center;
+  }
+  /* Glassmorphic card */
+  .auth-form {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    width: 350px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    animation: slideUp 0.6s ease;
+  }
+  
+  /* Slide animation */
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Inputs */
+  .auth-form input {
+    padding: 0.9rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    font-size: 0.95rem;
+    transition: background 0.3s ease;
+  }
+  
+  .auth-form input::placeholder {
+    color: #dcdcdc;
+  }
+  
+  .auth-form input:focus {
+    background: rgba(255, 255, 255, 0.25);
+  }
+  
+  /* Button */
+  .auth-form button {
+    padding: 0.9rem;
+    background: linear-gradient(to right, #6c63ff, #9b63ff);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .auth-form button:hover {
+    background: linear-gradient(to right, #5848ff, #823cff);
+  }
+  
+  /* Switch link */
+  .auth-switch {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .auth-switch a {
+    color: #a68eff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .auth-switch a:hover {
+    color: #c4b3ff;
+  }
+  
